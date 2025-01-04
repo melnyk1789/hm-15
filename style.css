@@ -1,62 +1,77 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #ffe6f0;
     margin: 0;
     padding: 0;
-    background-color: #f4b540;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #ffc1e3;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
     color: #000;
 }
 
-.container {
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-h2 {
-    margin-top: 20px;
-    color: #555;
-}
-
-label {
+.form-container label {
     display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
+    margin-top: 10px;
+    color: #000;
 }
 
-input, textarea, button {
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container input[type="url"],
+.form-container input[type="date"],
+.form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container input[type="file"] {
+    margin-top: 5px;
+}
+
+.form-container input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+.form-container button {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-textarea {
-    resize: none;
-}
-
-button {
-    background-color: #f4b540;
-    color: #fff;
+    margin-top: 15px;
+    background-color: #ff80aa;
+    color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #d69330;
+.form-container button:hover {
+    background-color: #e67399;
+}
+/* footer */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top: 2px solid #779611;
 }
 
-.section {
-    margin-bottom: 20px;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
 }

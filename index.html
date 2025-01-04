@@ -3,66 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Анкета відвідувача ресторану</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Форма</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Анкета відвідувача ресторану</h1>
-        <form action="#" method="POST">
-            <div class="section">
-                <h2>Контактна інформація</h2>
-                <label for="name">Ім'я:</label>
-                <input type="text" id="name" name="name" required>
+    <div class="form-container">
+        <h2>Запишіть свої дані, ми з вами зв'яжемося</h2>
+        <form>
+            <label for="name">Ім'я</label>
+            <input type="text" id="name" placeholder="Введіть своє ім'я">
 
-                <label for="phone">Телефон:</label>
-                <input type="tel" id="phone" name="phone" placeholder="у форматі 000-000-00-00" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Введіть свій email">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <label for="phone">Контактний телефон</label>
+            <input type="tel" id="phone" placeholder="(хх) ххх-хх-хх">
 
-                <label for="date">Дата відвідування:</label>
-                <input type="date" id="date" name="date" required>
-            </div>
+            <label for="social">Посилання на Facebook або Linkedin</label>
+            <input type="url" id="social" placeholder="Введіть посилання">
 
-            <div class="section">
-                <h2>Персональна інформація</h2>
-                <label for="age">Вік:</label>
-                <input type="number" id="age" name="age" min="1" max="120" required>
+            <label for="file">Прикріпіть файл</label>
+            <input type="file" id="file">
 
-                <label for="cuisine">Улюблена кухня:</label>
-                <input type="text" id="cuisine" name="cuisine" required>
+            <label for="date">Дата заповнення форми</label>
+            <input type="date" id="date" value="2024-09-21">
 
-                <label for="menu">Які ще страви ви б хотіли бачити в меню?</label>
-                <textarea id="menu" name="menu" rows="4" required></textarea>
-            </div>
+            <label for="message">Супровідний лист</label>
+            <textarea id="message" rows="4" placeholder=""></textarea>
 
-            <div class="section">
-                <h2>Оцінка нашого закладу</h2>
-                <p>Чому ви обрали наш заклад?</p>
-                <label>
-                    <input type="checkbox" name="reason" value="near_work"> Поряд з місцем роботи
-                </label>
-                <label>
-                    <input type="checkbox" name="reason" value="advertisement"> Побачив рекламу
-                </label>
-                <label>
-                    <input type="checkbox" name="reason" value="friends_recommendation"> Порадили друзі
-                </label>
-                <label>
-                    <input type="checkbox" name="reason" value="best_quality_price"> Найкраще співвідношення ціни і якості
-                </label>
+            <label>
+                <input type="checkbox"> Поставте відмітку у разі дозволу обробки даних
+            </label>
 
-                <p>Чи будете ви рекомендувати наш заклад своїм знайомим?</p>
-                <label>
-                    <input type="radio" name="recommend" value="yes" required> Так
-                </label>
-                <label>
-                    <input type="radio" name="recommend" value="no"> Ні
-                </label>
-            </div>
-
-            <button type="submit">Відправити</button>
+            <button type="submit">Надіслати</button>
         </form>
     </div>
 </body>
