@@ -1,42 +1,25 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Форма</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Form Example</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="form-container">
-        <h2>Запишіть свої дані, ми з вами зв'яжемося</h2>
-        <form>
-            <label for="name">Ім'я</label>
-            <input type="text" id="name" placeholder="Введіть своє ім'я">
-
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Введіть свій email">
-
-            <label for="phone">Контактний телефон</label>
-            <input type="tel" id="phone" placeholder="(хх) ххх-хх-хх">
-
-            <label for="social">Посилання на Facebook або Linkedin</label>
-            <input type="url" id="social" placeholder="Введіть посилання">
-
-            <label for="file">Прикріпіть файл</label>
-            <input type="file" id="file">
-
-            <label for="date">Дата заповнення форми</label>
-            <input type="date" id="date" value="2024-09-21">
-
-            <label for="message">Супровідний лист</label>
-            <textarea id="message" rows="4" placeholder=""></textarea>
-
-            <label>
-                <input type="checkbox"> Поставте відмітку у разі дозволу обробки даних
-            </label>
-
-            <button type="submit">Надіслати</button>
-        </form>
-    </div>
+    <form>
+        <label>
+            Введіть своє ім'я
+            <input type="text" placeholder="Ім'я">
+        </label>
+        
+        <input type="tel" placeholder="Телефон">
+        
+        <label>
+            <input type="email" placeholder="Email">
+        </label>
+        
+        <button type="submit">Надіслати</button>
+    </form>
 </body>
 </html>
